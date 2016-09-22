@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "start": "electron main.js",
+    "start-web": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start-window": "electron main.js",
     "lint": "tslint ./app/**/*.ts -t verbose",
     "lite": "lite-server",
     "postinstall": "typings install",
@@ -33,7 +34,9 @@
     "zone.js": "^0.6.23",
 
     "angular2-in-memory-web-api": "0.0.20",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+
+    "electron": "^1.3.4"
   },
   "devDependencies": {
     "concurrently": "^2.2.0",
@@ -52,9 +55,7 @@
     "karma-htmlfile-reporter": "^0.2.2",
     "karma-jasmine": "^0.3.8",
     "protractor": "^3.3.0",
-    "rimraf": "^2.5.2",
-    "electron": "^1.3.4"
-
+    "rimraf": "^2.5.2"
   },
   "repository": {}
 }

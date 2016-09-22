@@ -1,5 +1,4 @@
 .idea
-*.iml
 typings/**
 node_modules
 jspm_packages
@@ -18,4 +17,3 @@ _temp
 !typings/typings.d.ts
 !wallaby.js
 !main.js
-typings/
