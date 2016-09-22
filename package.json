@@ -1,7 +1,7 @@
 {
   "name": "angular2-quickstart",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "angular2 + electron",
   "scripts": {
     "start-web": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "start-window": "electron main.js",
