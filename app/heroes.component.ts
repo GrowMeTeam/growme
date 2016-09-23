@@ -7,7 +7,6 @@ import { Router }       from "@angular/router";
 
 
 @Component({
-    selector: 'my-heroes',
     styleUrls: ['app/heroes.component.css'],
     templateUrl: 'app/heroes.component.html',
     providers: [HeroService]
@@ -33,6 +32,17 @@ export class HeroesComponent implements OnInit {
 
     gotoDetail(): void {
         this.router.navigate(['/detail', this.selectedHero.id]);
+    }
+
+    add(name: string): void {
+        name = name.trim();
+        if(!name)
+            return;
+        this.heroService.create(name)
+            .then(hero => {
+                this.heroes.push(hero);
+                this.selectedHero = null;
+            })
     }
 
     ngOnInit(): void {
