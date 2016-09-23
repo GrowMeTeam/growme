@@ -4,11 +4,11 @@ import { FormsModule }      from '@angular/forms';
 import { HttpModule }       from "@angular/http";
 
 import { routing }              from '../app.routing';
-import { DashboardComponent }   from "../dashboard/components/dashboard.component";
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService }  from '../shared/services/in-memory-data.service';
+import {HeroesComponent} from "./components/heroes.component";
 
 @NgModule({
     imports: [
@@ -19,8 +19,8 @@ import { InMemoryDataService }  from '../shared/services/in-memory-data.service'
         InMemoryWebApiModule.forRoot(InMemoryDataService)
     ],
     declarations: [
-        DashboardComponent
+        HeroesComponent
     ],
-    bootstrap: [ DashboardComponent ]
+    bootstrap: [ HeroesComponent ]
 })
-export class DashboardModule { }
+export class HeroesModule { }

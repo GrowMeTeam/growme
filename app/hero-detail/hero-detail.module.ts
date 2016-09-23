@@ -9,6 +9,7 @@ import { DashboardComponent }   from "../dashboard/components/dashboard.componen
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService }  from '../shared/services/in-memory-data.service';
+import {HeroDetailComponent} from "./components/hero-detail.component";
 
 @NgModule({
     imports: [
@@ -19,8 +20,8 @@ import { InMemoryDataService }  from '../shared/services/in-memory-data.service'
         InMemoryWebApiModule.forRoot(InMemoryDataService)
     ],
     declarations: [
-        DashboardComponent
+        HeroDetailComponent
     ],
-    bootstrap: [ DashboardComponent ]
+    bootstrap: [ HeroDetailComponent ]
 })
-export class DashboardModule { }
+export class HeroDetailModule { }
