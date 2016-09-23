@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>GrowMe App. Hello Angular2 & Electron <3</h1>'
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.ts']
 })
-export class AppComponent { }
+export class AppComponent {
+    title = 'Tour of Heroes';
+}
