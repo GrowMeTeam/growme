@@ -3,8 +3,7 @@ import { BrowserModule }    from '@angular/platform-browser';
 import { FormsModule }      from '@angular/forms';
 import { HttpModule }       from "@angular/http";
 
-import { routing }              from '../app.routing';
-import { DashboardComponent }   from "../dashboard/components/dashboard.component";
+import { routing }              from '../main/app.routing';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';

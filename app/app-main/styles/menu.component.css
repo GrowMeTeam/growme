@@ -1,0 +1,41 @@
+div.root {
+    height: 100%;
+    color: #cfefff;
+    background-color: #443436;
+    width: 270px;
+    float: left;
+    position: relative;
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    padding: 10px 0 0 15px;
+    overflow: hidden;
+}
+.title {
+    font-size: 1.4em;
+    background-image: url('assets/img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px 0 0 46px;
+    height: 32px;
+}
+nav {
+    margin-top: 20px;
+}
+nav a {
+    width: 100%;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+nav a:visited, a:link {
+    color: #2d537b;
+}
+nav a:hover {
+    color: #2d537b;
+    background-color: #CFD8DC;
+}
+nav a.active {
+    color: #a73636;
+}

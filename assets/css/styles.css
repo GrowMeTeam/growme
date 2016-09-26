@@ -1,23 +1,20 @@
-
-/* #docregion , quickstart, toh */
-/* Master Styles */
+html,body {
+  height: 100%;
+  margin: 0;
+  font-family: Slack-Lato,appleLogo,sans-serif;
+}
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 h2, h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-}
-body {
-  margin: 2em;
 }
 /* #enddocregion quickstart */
 body, input[text], button {
   color: #888;
-  font-family: Cambria, Georgia;
+  /*font-family: Cambria, Georgia;*/
 }
 /* #enddocregion toh */
 a {
@@ -42,25 +39,6 @@ button:disabled {
   cursor: auto;
 }
 
-/* Navigation link styles */
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
-}
-nav a:visited, a:link {
-  color: #607D8B;
-}
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-nav a.active {
-  color: #039be5;
-}
 
 /* items class */
 .items {
